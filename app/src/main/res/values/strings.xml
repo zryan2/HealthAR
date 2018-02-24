@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">HealthAR</string>
+    <string name="title_activity_no_ar__mode">NoAR_Mode</string>
+    <string name="title_home">Home</string>
+    <string name="title_ar">AR</string>
+    <string name="title_symptoms">Symptoms</string>
+    <string name="title_activity_ar_mode">ArMode</string>
+    <string name="title_2d">2D</string>
+    <string name="title_3d">3D</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

@@ -35,7 +35,6 @@ import de.javagl.obj.Obj;
 import de.javagl.obj.ObjData;
 import de.javagl.obj.ObjReader;
 import de.javagl.obj.ObjUtils;
-
 /** Renders an object loaded from an OBJ file in OpenGL. */
 public class ObjectRenderer {
   private static final String TAG = ObjectRenderer.class.getSimpleName();

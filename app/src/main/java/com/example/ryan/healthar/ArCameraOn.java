@@ -31,6 +31,7 @@ import android.widget.Toast;
 
 import com.example.ryan.healthar.rendering.BackgroundRenderer;
 import com.example.ryan.healthar.rendering.ObjectRenderer;
+import com.example.ryan.healthar.rendering.ObjectRenderer.BlendMode;
 import com.example.ryan.healthar.rendering.PlaneRenderer;
 import com.example.ryan.healthar.rendering.PointCloudRenderer;
 import com.google.ar.core.Anchor;
@@ -249,11 +250,11 @@ public class ArCameraOn extends AppCompatActivity implements GLSurfaceView.Rende
 
         // Prepare the other rendering objects.
         try {
-            virtualObject.createOnGlThread(/*context=*/ this, "andy.obj", "andy.png");
+            virtualObject.createOnGlThread(/*context=*/ this, "male.obj", "andy.png");
             virtualObject.setMaterialProperties(0.0f, 3.5f, 1.0f, 6.0f);
 
             virtualObjectShadow.createOnGlThread(/*context=*/ this, "andy_shadow.obj", "andy_shadow.png");
-            virtualObjectShadow.setBlendMode(ObjectRenderer.BlendMode.Shadow);
+            virtualObjectShadow.setBlendMode(BlendMode.Shadow);
             virtualObjectShadow.setMaterialProperties(1.0f, 0.0f, 0.0f, 1.0f);
         } catch (IOException e) {
             Log.e(TAG, "Failed to read obj file");

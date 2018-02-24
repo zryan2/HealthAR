@@ -21,11 +21,16 @@ public class ArMode extends AppCompatActivity {
                 case R.id.navigation_home:
                     return true;
                 case R.id.navigation_symptoms:
+                    SymptomsAr symptomsAr = new SymptomsAr();
+                    FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                    selectedFragment = symptomsAr;
+                    transaction.replace(R.id.contentLayout, selectedFragment);
+                    transaction.commit();
                     return true;
                 case R.id.navigation_2d:
                     //go to ar fragment
                     ArCamera arCamera = new ArCamera();
-                    FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                    transaction = getSupportFragmentManager().beginTransaction();
                     selectedFragment = arCamera;
                     transaction.replace(R.id.contentLayout, selectedFragment);
                     transaction.commit();

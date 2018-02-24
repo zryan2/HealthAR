@@ -24,12 +24,16 @@ public class NoArMode extends AppCompatActivity {
                     mTextMessage.setText(R.string.title_home);
                     return true;
                 case R.id.navigation_symptoms:
-                    mTextMessage.setText(R.string.title_symptoms);
+                    SymptomsNoAr symptomsNoAr = new SymptomsNoAr();
+                    FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                    selectedFragment = symptomsNoAr;
+                    transaction.replace(R.id.contentLayout, selectedFragment);
+                    transaction.commit();
                     return true;
                 case R.id.navigation_2d:
                     //go to 2D body fragment
                     Body2D body2D = new Body2D();
-                    FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                    transaction = getSupportFragmentManager().beginTransaction();
                     selectedFragment = body2D;
                     transaction.replace(R.id.contentLayout, selectedFragment);
                     transaction.commit();

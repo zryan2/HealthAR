@@ -250,7 +250,7 @@ public class ArCameraOn extends AppCompatActivity implements GLSurfaceView.Rende
 
         // Prepare the other rendering objects.
         try {
-            virtualObject.createOnGlThread(/*context=*/ this, "male.obj", "andy.png");
+            virtualObject.createOnGlThread(/*context=*/ this, "male.obj", "male.png");
             virtualObject.setMaterialProperties(0.0f, 3.5f, 1.0f, 6.0f);
 
             virtualObjectShadow.createOnGlThread(/*context=*/ this, "andy_shadow.obj", "andy_shadow.png");
@@ -310,7 +310,7 @@ public class ArCameraOn extends AppCompatActivity implements GLSurfaceView.Rende
                         // Hits are sorted by depth. Consider only closest hit on a plane or oriented point.
                         // Cap the number of objects created. This avoids overloading both the
                         // rendering system and ARCore.
-                        if (anchors.size() >= 20) {
+                        if (anchors.size() >= 1) {
                             anchors.get(0).detach();
                             anchors.remove(0);
                         }

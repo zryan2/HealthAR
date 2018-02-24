@@ -13,44 +13,214 @@
         <!--android:layout_width="fill_parent"-->
         <!--android:layout_height="fill_parent"/>-->
 
-    <RelativeLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ImageButton
-            android:id="@+id/head_front_btn"
-            style="@android:style/Widget.Holo.ImageButton"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="23dp"
-            android:adjustViewBounds="false"
-            android:background="@null"
-            android:cropToPadding="false"
-            app:srcCompat="@drawable/head_front" />
+            android:orientation="vertical">
 
-        <ImageButton
-            android:id="@+id/chest_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignStart="@+id/head_front_btn"
-            android:layout_below="@+id/head_front_btn"
-            android:layout_marginTop="-10.9dp"
-            android:background="@null"
-            android:translationX="-18.5dp"
-            app:srcCompat="@drawable/chest" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-        <ImageButton
-            android:id="@+id/neck_front_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignTop="@+id/head_front_btn"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="90.2dp"
-            android:translationX="5.8dp"
-            android:background="@null"
-            app:srcCompat="@drawable/neck_front" />
+                <ImageButton
+                    android:id="@+id/head_front_btn"
+                    style="@android:style/Widget.Holo.ImageButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="23dp"
+                    android:adjustViewBounds="false"
+                    android:background="@null"
+                    android:cropToPadding="false"
+                    app:srcCompat="@drawable/head_front" />
 
-    </RelativeLayout>
+                <ImageButton
+                    android:id="@+id/chest_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/head_front_btn"
+                    android:layout_below="@+id/head_front_btn"
+                    android:layout_marginTop="-10.9dp"
+                    android:background="@null"
+                    android:translationX="-18.5dp"
+                    app:srcCompat="@drawable/chest" />
+
+                <ImageButton
+                    android:id="@+id/neck_front_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/head_front_btn"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="90.2dp"
+                    android:background="@null"
+                    android:translationX="5.8dp"
+                    app:srcCompat="@drawable/neck_front" />
+
+                <ImageButton
+                    android:id="@+id/abs_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/chest_btn"
+                    android:layout_toStartOf="@+id/left_arm_front_btn"
+                    android:layout_marginTop="-5dp"
+                    android:translationX="3dp"
+                    android:background="@null"
+                    app:srcCompat="@drawable/abs" />
+
+                <ImageButton
+                    android:id="@+id/crotch_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/abs_btn"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-18dp"
+                    android:translationX="4dp"
+
+                    android:background="@null"
+                    app:srcCompat="@drawable/crotch" />
+
+                <ImageButton
+                    android:id="@+id/left_arm_front_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/neck_front_btn"
+                    android:layout_toEndOf="@+id/head_front_btn"
+                    android:background="@null"
+                    android:translationX="4dp"
+                    android:layout_marginTop="-15dp"
+
+                    app:srcCompat="@drawable/left_arm_front" />
+
+                <ImageButton
+                    android:id="@+id/sides_front_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/abs_btn"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-4dp"
+                    android:background="@null"
+                    app:srcCompat="@drawable/sides_front" />
+
+                <ImageButton
+                    android:id="@+id/right_arm_front_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_below="@+id/neck_front_btn"
+                    android:layout_marginEnd="17dp"
+                    android:layout_toStartOf="@+id/chest_btn"
+                    android:background="@null"
+                    android:layout_marginTop="-10dp"
+                    android:translationX="6dp"
+                    app:srcCompat="@drawable/right_arm_front" />
+
+                <ImageButton
+                    android:id="@+id/left_leg_top_front_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignEnd="@+id/sides_front_btn"
+                    android:layout_below="@+id/abs_btn"
+                    android:layout_marginTop="4.2dp"
+                    android:translationX="6dp"
+                    android:background="@null"
+                    app:srcCompat="@drawable/left_leg_top_front" />
+
+                <ImageButton
+                    android:id="@+id/left_leg_bottom_front_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignEnd="@+id/crotch_btn"
+                    android:layout_below="@+id/left_leg_top_front_btn"
+                    android:background="@null"
+                    android:layout_marginTop="-11dp"
+                    android:translationX="6dp"
+                    app:srcCompat="@drawable/left_leg_bottom_front" />
+
+                <ImageButton
+                    android:id="@+id/left_ankle_front_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignEnd="@+id/left_leg_bottom_front_btn"
+                    android:background="@null"
+                    android:layout_marginTop="716dp"
+                    android:translationX="-7dp"
+                    app:srcCompat="@drawable/left_ankle_front" />
+
+                <ImageButton
+                    android:id="@+id/left_foot_front_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignStart="@+id/left_leg_bottom_front_btn"
+                    android:translationX="15dp"
+                    android:translationY="-6dp"
+
+                    android:background="@null"
+                    app:srcCompat="@drawable/left_foot_front" />
+
+                <ImageButton
+                    android:id="@+id/right_leg_top_front_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignStart="@+id/sides_front_btn"
+                    android:layout_below="@+id/sides_front_btn"
+                    android:background="@null"
+
+                    android:translationX="-3dp"
+                    android:translationY="-14dp"
+                    app:srcCompat="@drawable/right_leg_top_front" />
+
+                <ImageButton
+                    android:id="@+id/right_leg_bottom_front_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_below="@+id/left_leg_top_front_btn"
+                    android:layout_toStartOf="@+id/left_leg_top_front_btn"
+                    android:background="@null"
+                    android:translationX="4dp"
+                    android:translationY="-8dp"
+                    app:srcCompat="@drawable/right_leg_bottom_front" />
+
+                <ImageButton
+                    android:id="@+id/right_ankle_front_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignStart="@+id/abs_btn"
+                    android:layout_alignTop="@+id/left_ankle_front_btn"
+
+
+                    android:background="@null"
+                    android:translationX="6dp"
+                    android:translationY="-4dp"
+                    app:srcCompat="@drawable/right_ankle_front" />
+
+                <ImageButton
+                    android:id="@+id/right_foot_front_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignEnd="@+id/right_leg_top_front_btn"
+                    android:layout_below="@+id/left_ankle_front_btn"
+                    android:background="@null"
+                    android:translationX="-5dp"
+                    android:translationY="-2dp"
+
+                    app:srcCompat="@drawable/right_foot_front" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
 </FrameLayout>

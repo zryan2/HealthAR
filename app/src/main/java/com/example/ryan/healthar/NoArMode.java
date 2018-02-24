@@ -11,7 +11,6 @@ import android.widget.TextView;
 
 public class NoArMode extends AppCompatActivity {
 
-    private TextView mTextMessage;
     Fragment selectedFragment = null;
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
@@ -21,7 +20,6 @@ public class NoArMode extends AppCompatActivity {
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
                 case R.id.navigation_home:
-                    mTextMessage.setText(R.string.title_home);
                     return true;
                 case R.id.navigation_symptoms:
                     SymptomsNoAr symptomsNoAr = new SymptomsNoAr();
@@ -39,7 +37,6 @@ public class NoArMode extends AppCompatActivity {
                     transaction.commit();
                     return true;
                 case R.id.navigation_3d:
-                    mTextMessage.setText(R.string.title_3d);
                     return true;
             }
             return false;
@@ -51,7 +48,6 @@ public class NoArMode extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_no_ar__mode);
 
-        mTextMessage = (TextView) findViewById(R.id.message);
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
         //stop shifting englarging on navigation view bar

@@ -1,14 +1,87 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.ryan.healthar.ARFragment">
+    tools:context="com.example.ryan.healthar.ARFragment"
+    android:background="@drawable/gradient"
+    >
 
     <!-- TODO: Update blank fragment layout -->
 
-    <Button
-        android:id="@+id/mCamOn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Turn On" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/mMale"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/roundbutton"
+
+            android:src="@drawable/male_image"
+            android:backgroundTint="#ffff"/>
+
+        <ImageButton
+            android:id="@+id/mFemale"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/mMale"
+            android:layout_marginStart="45dp"
+            android:layout_toEndOf="@+id/mMale"
+            android:background="@drawable/roundbutton"
+            android:src="@drawable/female_image"
+            android:backgroundTint="#ffff"/>
+
+        <ImageButton
+            android:id="@+id/mCamOn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="80dp"
+            android:background="@null"
+            android:src="@drawable/camera_image" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp"
+            android:fontFamily="@font/opificio_rounded"
+            android:text="Choose a gender"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <TextView
+            android:id="@+id/selectText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/mMale"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="11dp"
+            android:fontFamily="@font/opificio_rounded"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        <TextView
+            android:id="@+id/touchText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/mCamOn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="11dp"
+            android:fontFamily="@font/opificio_rounded"
+
+            android:text="Touch the Camera"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
 </FrameLayout>

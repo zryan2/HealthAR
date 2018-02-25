@@ -1,16 +1,16 @@
 package com.example.ryan.healthar;
 
 import android.content.Intent;
-import android.os.Handler;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.os.Handler;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
 import com.google.ar.core.ArCoreApk;
-import com.google.ar.core.ArCoreApk.*;
+import com.google.ar.core.ArCoreApk.Availability;
 
-import static android.view.View.INVISIBLE;
 import static android.view.View.VISIBLE;
 
 
@@ -22,6 +22,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.hide();
+
         mArBtn = findViewById(R.id.mArBtn);
         mNoArBtn = findViewById(R.id.mNoArBtn);
 
@@ -62,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
             mArBtn.setEnabled(true);
             // indicator on the button.
         } else { // unsupported or unknown
-            mArBtn.setVisibility(INVISIBLE);
+            mArBtn.setVisibility(VISIBLE);
             mArBtn.setEnabled(false);
 
         }

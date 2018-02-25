@@ -22,6 +22,13 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <TextView
+                android:id="@+id/partInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="partText"
+                android:textAlignment="center" />
+
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
@@ -37,6 +44,7 @@
                     android:adjustViewBounds="false"
                     android:background="@null"
                     android:cropToPadding="false"
+                    android:onClick="onClick"
                     app:srcCompat="@drawable/head_front" />
 
                 <ImageButton
@@ -48,6 +56,7 @@
                     android:layout_marginTop="-10.9dp"
                     android:background="@null"
                     android:translationX="-18.5dp"
+                    android:onClick="onClick"
                     app:srcCompat="@drawable/chest" />
 
                 <ImageButton
@@ -59,6 +68,7 @@
                     android:layout_marginTop="90.2dp"
                     android:background="@null"
                     android:translationX="5.8dp"
+                    android:onClick="onClick"
                     app:srcCompat="@drawable/neck_front" />
 
                 <ImageButton
@@ -66,11 +76,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/chest_btn"
-                    android:layout_toStartOf="@+id/left_arm_front_btn"
                     android:layout_marginTop="-5dp"
-                    android:translationX="3dp"
+                    android:layout_toStartOf="@+id/left_arm_front_btn"
                     android:background="@null"
-                    app:srcCompat="@drawable/abs" />
+                    android:translationX="3dp"
+                    android:onClick="onClick"
+                    android:elevation="10dp"
+                        app:srcCompat="@drawable/abs" />
 
                 <ImageButton
                     android:id="@+id/crotch_btn"
@@ -79,9 +91,10 @@
                     android:layout_below="@+id/abs_btn"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="-18dp"
-                    android:translationX="4dp"
-
                     android:background="@null"
+                    android:onClick="onClick"
+                    android:translationX="4dp"
+                    android:elevation="10dp"
                     app:srcCompat="@drawable/crotch" />
 
                 <ImageButton
@@ -89,11 +102,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/neck_front_btn"
+                    android:layout_marginTop="-15dp"
                     android:layout_toEndOf="@+id/head_front_btn"
                     android:background="@null"
                     android:translationX="4dp"
-                    android:layout_marginTop="-15dp"
-
+                    android:onClick="onClick"
                     app:srcCompat="@drawable/left_arm_front" />
 
                 <ImageButton
@@ -104,18 +117,19 @@
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="-4dp"
                     android:background="@null"
+                    android:onClick="onClick"
                     app:srcCompat="@drawable/sides_front" />
 
                 <ImageButton
                     android:id="@+id/right_arm_front_btn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-
+                    android:onClick="onClick"
                     android:layout_below="@+id/neck_front_btn"
                     android:layout_marginEnd="17dp"
+                    android:layout_marginTop="-10dp"
                     android:layout_toStartOf="@+id/chest_btn"
                     android:background="@null"
-                    android:layout_marginTop="-10dp"
                     android:translationX="6dp"
                     app:srcCompat="@drawable/right_arm_front" />
 
@@ -123,23 +137,23 @@
                     android:id="@+id/left_leg_top_front_btn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-
+                    android:onClick="onClick"
                     android:layout_alignEnd="@+id/sides_front_btn"
                     android:layout_below="@+id/abs_btn"
                     android:layout_marginTop="4.2dp"
-                    android:translationX="6dp"
                     android:background="@null"
+                    android:translationX="6dp"
                     app:srcCompat="@drawable/left_leg_top_front" />
 
                 <ImageButton
                     android:id="@+id/left_leg_bottom_front_btn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-
+                    android:onClick="onClick"
                     android:layout_alignEnd="@+id/crotch_btn"
                     android:layout_below="@+id/left_leg_top_front_btn"
-                    android:background="@null"
                     android:layout_marginTop="-11dp"
+                    android:background="@null"
                     android:translationX="6dp"
                     app:srcCompat="@drawable/left_leg_bottom_front" />
 
@@ -147,10 +161,10 @@
                     android:id="@+id/left_ankle_front_btn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-
+                    android:onClick="onClick"
                     android:layout_alignEnd="@+id/left_leg_bottom_front_btn"
-                    android:background="@null"
                     android:layout_marginTop="716dp"
+                    android:background="@null"
                     android:translationX="-7dp"
                     app:srcCompat="@drawable/left_ankle_front" />
 
@@ -158,13 +172,13 @@
                     android:id="@+id/left_foot_front_btn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-
+                    android:onClick="onClick"
                     android:layout_alignParentBottom="true"
                     android:layout_alignStart="@+id/left_leg_bottom_front_btn"
-                    android:translationX="15dp"
-                    android:translationY="-6dp"
-
                     android:background="@null"
+                    android:translationX="15dp"
+
+                    android:translationY="-6dp"
                     app:srcCompat="@drawable/left_foot_front" />
 
                 <ImageButton
@@ -175,7 +189,7 @@
                     android:layout_alignStart="@+id/sides_front_btn"
                     android:layout_below="@+id/sides_front_btn"
                     android:background="@null"
-
+                    android:onClick="onClick"
                     android:translationX="-3dp"
                     android:translationY="-14dp"
                     app:srcCompat="@drawable/right_leg_top_front" />
@@ -184,7 +198,7 @@
                     android:id="@+id/right_leg_bottom_front_btn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-
+                    android:onClick="onClick"
                     android:layout_below="@+id/left_leg_top_front_btn"
                     android:layout_toStartOf="@+id/left_leg_top_front_btn"
                     android:background="@null"
@@ -199,7 +213,7 @@
 
                     android:layout_alignStart="@+id/abs_btn"
                     android:layout_alignTop="@+id/left_ankle_front_btn"
-
+                    android:onClick="onClick"
 
                     android:background="@null"
                     android:translationX="6dp"
@@ -210,14 +224,23 @@
                     android:id="@+id/right_foot_front_btn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-
+                    android:onClick="onClick"
                     android:layout_alignEnd="@+id/right_leg_top_front_btn"
                     android:layout_below="@+id/left_ankle_front_btn"
                     android:background="@null"
                     android:translationX="-5dp"
                     android:translationY="-2dp"
-
                     app:srcCompat="@drawable/right_foot_front" />
+
+                <!--<fragment-->
+                    <!--android:id="@+id/infoFragment"-->
+                    <!--android:name="com.example.ryan.healthar.BodySelectionInfo"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_above="@+id/chest_btn"-->
+                    <!--android:layout_alignStart="@+id/right_arm_front_btn"-->
+                    <!--android:layout_marginBottom="20dp"-->
+                    <!--android:visibility="invisible"/>-->
 
             </RelativeLayout>
         </LinearLayout>

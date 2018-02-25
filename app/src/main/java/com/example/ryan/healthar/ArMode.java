@@ -5,6 +5,7 @@ import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 
@@ -19,11 +20,16 @@ public class ArMode extends AppCompatActivity {
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
                 case R.id.navigation_home:
+                    HomeFragment_Ar homeFragmentAr = new HomeFragment_Ar();
+                    FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                    selectedFragment = homeFragmentAr;
+                    transaction.replace(R.id.contentLayout, selectedFragment);
+                    transaction.commit();
                     return true;
                 case R.id.navigation_symptoms:
-                    SymptomsAr symptomsAr = new SymptomsAr();
-                    FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-                    selectedFragment = symptomsAr;
+                    SymptomsNoAr symptomsNoAr = new SymptomsNoAr();
+                    transaction = getSupportFragmentManager().beginTransaction();
+                    selectedFragment = symptomsNoAr;
                     transaction.replace(R.id.contentLayout, selectedFragment);
                     transaction.commit();
                     return true;
@@ -44,9 +50,15 @@ public class ArMode extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ar_mode);
-
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.hide();
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+        HomeFragment_Ar homeFragmentAr = new HomeFragment_Ar();
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        selectedFragment = homeFragmentAr;
+        transaction.replace(R.id.contentLayout, selectedFragment);
+        transaction.commit();
     }
 
 }

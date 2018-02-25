@@ -42,6 +42,8 @@
         <activity
             android:name=".ArMode"
             android:label="@string/title_activity_ar_mode" />
+        <activity android:name=".BodySelectionInfo"
+            android:theme="@style/AppTheme.CustomTheme"></activity>
         <!--
      This tag indicates that this application requires ARCore.  This results in the Google Play
      Store downloading and installing ARCore along with the application.

@@ -40,6 +40,7 @@ public class SymptomsNoAr extends Fragment {
 
         listViewSymptom = (ListView) v.findViewById(R.id.listViewSymptoms);
         symptomDataList = new ArrayList<>();
+//        addSymptoms();
 
         return v;
     }
@@ -57,7 +58,6 @@ public class SymptomsNoAr extends Fragment {
                 }
                 SymptomList adapter = new SymptomList(getActivity(), symptomDataList);
                 listViewSymptom.setAdapter(adapter);
-                //addSymptoms();
             }
 
             @Override
@@ -72,4 +72,6 @@ public class SymptomsNoAr extends Fragment {
         SymptomData  symptomDataData = new SymptomData("Cough", "Throat", "Coughing stuff out", "https://www.google.com");
         databaseSymptom.child(id).setValue(symptomDataData);
     }
+
+
 }

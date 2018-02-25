@@ -2,7 +2,7 @@
 
 ## Welcome!
 
-## Short Links to Important Resources:
+## Important Resources:
 * docs: [ARCore](https://developers.google.com/ar/discover/) [OpenGL](https://developer.android.com/guide/topics/graphics/opengl.html)
 * bugs: just use Android Studio to check for bugs
 * communcations: mchang0816@gmail.com, zeng.ryan2@gmail.com

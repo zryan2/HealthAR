@@ -14,4 +14,4 @@ to the users pain areas, it will bring up potential diseases that could be the c
 [CONTRIBUTING](CONTRIBUTING.md)
 
 # License 
-[LICENSE](LICENSE.md)
+[LICENSE](LICENSE.txt)

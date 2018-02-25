@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                .
+
+                <TextView
+                    android:id="@+id/howWorks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/opificio_rounded"
+                    android:text="How It Works"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/howWorks"
+                    android:layout_marginEnd="16dp"
+                    app:srcCompat="@drawable/how_to_ar_1" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="145dp"
+                    android:layout_height="75dp"
+
+                    android:layout_above="@+id/imageView4"
+                    android:layout_alignStart="@+id/imageView4"
+                    android:layout_marginBottom="58dp"
+                    android:translationY="150dp"
+                    android:translationX="15dp"
+
+                    android:fontFamily="@font/opificio_rounded"
+                    android:text="Step 1: Activate AR after choosing the gender."
+                    android:textAlignment="gravity"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                .
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="16dp"
+                    android:translationX="-160dp"
+                    app:srcCompat="@drawable/how_to_ar_2" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:translationY="70dp"
+                    android:translationX="215dp"
+                    android:text="Step 2: Indicate where your pain is located on the 3D model." />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="100dp">
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:translationX="180dp"
+                    app:srcCompat="@drawable/how_to_2" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:translationY="70dp"
+                    android:translationX="15dp"
+                    android:text="Step 3: Learn what possible disease you may have." />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

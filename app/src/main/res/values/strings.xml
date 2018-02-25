@@ -1,3 +1,96 @@
 <resources>
     <string name="app_name">HealthAR</string>
+    <string name="title_activity_no_ar__mode">NoAR_Mode</string>
+    <string name="title_home">Home</string>
+    <string name="title_ar">AR</string>
+    <string name="title_symptoms">Symptoms</string>
+    <string name="title_activity_ar_mode">ArMode</string>
+    <string name="title_2d">2D</string>
+    <string name="title_3d">3D</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="chestPain">
+        <item>Sharp</item>
+        <item>Dull</item>
+        <item>Burning</item>
+        <item>Aching</item>
+        <item>Stabbing</item>
+        <item>Tight, squeezing sensation</item>
+    </string-array>
+    <string-array name="abPain">
+        <item>Bloating</item>
+        <item>Belching</item>
+        <item>Gas</item>
+        <item>Indigestion</item>
+        <item>Diarrhea</item>
+        <item>Constipation</item>
+        <item>Heartburn</item>
+        <item>Discomfort</item>
+    </string-array>
+    <string-array name="upperLegPain">
+        <item>Itching</item>
+        <item>Tingling</item>
+        <item>Difficulty Walking</item>
+        <item>Numbness</item>
+        <item>Burning Sensation</item>
+    </string-array>
+    <string-array name="lowerLegPain">
+        <item>Itching</item>
+        <item>Tingling</item>
+        <item>Difficulty Walking</item>
+        <item>Numbness</item>
+        <item>Burning Sensation</item>
+    </string-array>
+    <string-array name="anklePain">
+        <item>Burning</item>
+        <item>Numbness</item>
+        <item>Tingling</item>
+        <item>Stiffness</item>
+        <item>Swelling</item>
+        <item>Instability</item>
+        <item>Can't bear weight</item>
+        <item>Weakness</item>
+    </string-array>
+    <string-array name="footPain">
+        <item>Burning</item>
+        <item>Numbness</item>
+        <item>Tingling</item>
+        <item>Stiffness</item>
+        <item>Swelling</item>
+        <item>Instability</item>
+        <item>Can't bear weight</item>
+        <item>Weakness</item>
+    </string-array>
+    <string-array name="armPain">
+        <item>Swelling</item>
+        <item>Severe Pain</item>
+        <item>Trouble Moving</item>
+        <item>Cracked or Snap sound</item>
+        <item>Stiffness</item>
+        <item>Swollen lymph node under arm</item>
+    </string-array>
+    <string-array name="headPain">
+        <item>Headache</item>
+        <item>Migraines</item>
+        <item>Tension</item>
+    </string-array>
+    <string-array name="neckPain">
+        <item>Dizziness</item>
+        <item>Lightheadedness</item>
+        <item>Sharp pain</item>
+        <item>Difficult swallowing</item>
+        <item>Pulsating</item>
+        <item>Swelling</item>
+    </string-array>
+    <string-array name="sidePain">
+        <item>Pain or pressure</item>
+        <item>Skin appears yellow</item>
+        <item>Severe tenderness when touched</item>
+        <item>Swelling of abdomen</item>
+    </string-array>
+    <string-array name="crotchPain">
+        <item>Swelling</item>
+        <item>Sudden pain</item>
+        <item>Bruising</item>
+    </string-array>
 </resources>

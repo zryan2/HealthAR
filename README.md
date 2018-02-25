@@ -11,7 +11,7 @@ to the users pain areas, it will bring up potential diseases that could be the c
     * Download files and import project into Android Studio
     
 # Contributor Guide
-https://github.com/zryan2/HealthAR/blob/master/CONTRIBUTORS.md
+[CONTRIBUTING](CONTRIBUTING.md)
 
 # License 
-https://github.com/zryan2/HealthAR/blob/master/LICENSE
+[LICENSE](LICENSE.md)

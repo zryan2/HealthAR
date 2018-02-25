@@ -11,8 +11,9 @@
 
 ## Development environment details
 * Use Android Studio
+* Import project
 
-## How to submit changes: Pull Request protocol etc. 
+## How to submit changes: Pull Request protocol
 Just pull request and we'll look into it
 
 ## How to report a bug: 
@@ -31,7 +32,7 @@ If you have any features you would like to add, just email us.
 ## Code of Conduct
 Be nice please. Help us respectfully.
 
-## Recognition model
+## Recognition
 * You will be put under the list of contributors
 
 ## Where can I ask for help?
